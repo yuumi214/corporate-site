@@ -368,7 +368,7 @@ header {
       margin-bottom:0px;
       padding:10px 10px 10px 20px;
       background-image: url("../images/news/side_arrow.jpg");
-       @media screen and (-webkit-min-device-pixel-ratio: 2),
+      @media screen and (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 2dppx) {
           background-image: url("../images/news/side_arrow@2x.png");
         }
