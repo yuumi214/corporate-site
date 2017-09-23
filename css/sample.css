@@ -231,11 +231,14 @@ header {
         display: block;
         font-weight: bold;
         margin-bottom: 3px; }
-  #contents #main th, #contents #main td {
-    padding: 20px 20px 20px 0;
+  #contents #main th,
+  #contents #main td {
+    padding: 20px 0;
     font-size: 14px;
     font-size: 1.4rem;
     color: #626262; }
+  #contents #main th {
+    padding-right: 20px; }
   @media (min-width: 550px) {
     #contents #main h2 {
       font-size: 20px;
@@ -268,13 +271,15 @@ header {
     background-position: 8px center;
     margin-bottom: 0px;
     padding: 10px 10px 10px 20px;
-    background-image: url("../images/news/side_arrow.jpg"); }
+    background-image: url("../images/news/side_arrow.jpg");
+    background-size: 4px 8px; }
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       #contents #sidemenu .pc_sidemenu li {
         background-image: url("../images/news/side_arrow@2x.png"); } }
   #contents #sidemenu .fb_widget {
-    display: inline;
-    position: relative; }
+    display: inline-block;
+    position: relative;
+    text-align: justify; }
 
 footer {
   background-color: #42b9d0;

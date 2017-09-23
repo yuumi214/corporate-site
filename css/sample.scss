@@ -143,7 +143,6 @@ header {
     }
   } // min-width: 550px
 } // header
-
 #cover_area {
 
   text-align: center;
@@ -168,8 +167,7 @@ header {
       margin-left: 70px;
     }
   } // min-width: 550px
-}//Cover area (index)
-
+} //Cover area (index)
 #cover_area2 {
   padding: 40px 0; //retina_bg
   background-image: url("../images/news/sub_cover.jpg");
@@ -201,8 +199,7 @@ header {
       letter-spacing: 0.2rem;
     }
   } // min-width: 550px
-}//Cover area(News)
-
+} //Cover area(News)
 #service_area {
 
   padding-top: 20px;
@@ -229,8 +226,7 @@ header {
       }
     } // min-width: 550px
   } // .columns
-}// #service_area (index)
-
+} // #service_area (index)
 #news_area {
   background-color: $gray_blue;
   @media (min-width: 550px) {
@@ -283,8 +279,7 @@ header {
       } // li
     } // .news_lists
   } // min-width: 550px
-}// #news_area (index)
-
+} // #news_area (index)
 #contents {
   padding-top: 20px;
 
@@ -293,8 +288,7 @@ header {
     padding-bottom: 70px;
   }
   .container {}
-}//(News&company)
-
+} //(News&company)
 #contents #main {
   //chrome検証時：@include fontsize指定でpxが出てない？->出た（なぜ？）
   padding-right: 20px;
@@ -305,9 +299,9 @@ header {
     @include fontsize(15);
     font-weight: bold;
     padding-bottom: 15px;
-     &.company_info{
-      margin-bottom:0px;
-    }//効いてない(Company)
+    &.company_info {
+      margin-bottom: 0px;
+    } //効いてない(Company)
   }
   .news_lists {
     @include fontsize(15);
@@ -322,12 +316,17 @@ header {
     }
   }
   
-  th,td{
-    padding:20px 20px 20px 0;
+  th,
+  td {
+    padding: 20px 0;
     @include fontsize(14);
-    color:#626262;
+    color: #626262;
   }
-  
+
+th{
+  padding-right:20px;}
+
+
   @media (min-width:550px) {
     h2 {
       @include fontsize(20);
@@ -359,28 +358,29 @@ header {
       padding: 15px;
       margin-bottom: 0px;
     }
-    li{
-      list-style:none;
-      display:block;
-      border-bottom:1px solid $gray;
-      background-repeat:no-repeat;
-      background-position:8px center;
-      margin-bottom:0px;
-      padding:10px 10px 10px 20px;
+    li {
+      list-style: none;
+      display: block;
+      border-bottom: 1px solid $gray;
+      background-repeat: no-repeat;
+      background-position: 8px center;
+      margin-bottom: 0px;
+      padding: 10px 10px 10px 20px;
       background-image: url("../images/news/side_arrow.jpg");
+      background-size: 4px 8px;
       @media screen and (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx) {
-          background-image: url("../images/news/side_arrow@2x.png");
+      (min-resolution: 2dppx) {
+      background-image: url("../images/news/side_arrow@2x.png");
         }
+      
     }
-    @media (min-width:550px) {}
   }
-.fb_widget{
-  display:inline;
-  position:relative;
-}
-}//contents sidemenu
-
+  .fb_widget {
+    display: inline-block;
+    position: relative;
+    text-align:justify;
+  }
+} //contents sidemenu
 footer {
   background-color: $blue1;
   color: #fff;
@@ -460,8 +460,7 @@ footer {
       margin-top: 30px;
     }
   } // min-width: 550p
-}// footer
-
+} // footer
 h1 {
   margin: 0;
   padding: 0;
