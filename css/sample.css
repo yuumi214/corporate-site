@@ -276,11 +276,15 @@ header {
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       #contents #sidemenu .pc_sidemenu li {
         background-image: url("../images/news/side_arrow@2x.png"); } }
-  #contents #sidemenu .fb_widget {
-    display: inline-block;
-    position: relative;
-    text-align: justify; }
 
+.fb_widget {
+  display: inline-block;
+  position: relative;
+  text-align: justify; }
+
+@media (max-width: 550px) {
+  .pc_sidemenu {
+    display: none; } }
 footer {
   background-color: #42b9d0;
   color: #fff;
