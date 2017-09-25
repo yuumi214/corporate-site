@@ -186,7 +186,15 @@
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $(document).ready(function() {
+        $("#sp_navi_btn").click(function() {
+          $(this).next().slideToggle();
+        });
+      });
+    });
+  </script>
 </body>
-
 </html>
