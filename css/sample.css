@@ -210,48 +210,49 @@ header {
       padding-top: 35px;
       padding-bottom: 70px; } }
 
-#contents #main {
+#contents #main h2 {
+  color: #42b9d0;
+  border-bottom: 3px solid #42b9d0;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 15px; }
+  #contents #main h2.company_info {
+    margin-bottom: 0px; }
+#contents #main .news_lists {
+  font-size: 15px;
+  font-size: 1.5rem; }
+  #contents #main .news_lists li {
+    list-style: none; }
+    #contents #main .news_lists li span {
+      color: #42b9d0;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 3px; }
+#contents #main th,
+#contents #main td {
+  padding: 20px 0;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #626262; }
+#contents #main th {
   padding-right: 20px; }
+@media (min-width: 550px) {
   #contents #main h2 {
-    color: #42b9d0;
-    border-bottom: 3px solid #42b9d0;
-    font-size: 15px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-bottom: 15px; }
-    #contents #main h2.company_info {
-      margin-bottom: 0px; }
-  #contents #main .news_lists {
-    font-size: 15px;
-    font-size: 1.5rem; }
-    #contents #main .news_lists li {
-      list-style: none; }
-      #contents #main .news_lists li span {
-        color: #42b9d0;
-        display: block;
-        font-weight: bold;
-        margin-bottom: 3px; }
-  #contents #main th,
-  #contents #main td {
-    padding: 20px 0;
-    font-size: 14px;
-    font-size: 1.4rem;
-    color: #626262; }
-  #contents #main th {
-    padding-right: 20px; }
-  @media (min-width: 550px) {
-    #contents #main h2 {
-      font-size: 20px;
-      font-size: 2rem;
-      padding-bottom: 20px; }
-    #contents #main .news_lists li {
-      list-style: none;
-      padding-bottom: 5px; }
-      #contents #main .news_lists li span {
-        display: inline-block;
-        margin-bottom: 0;
-        padding-right: 10px; } }
+    font-size: 20px;
+    font-size: 2rem;
+    padding-bottom: 20px; }
+  #contents #main .news_lists li {
+    list-style: none;
+    padding-bottom: 5px; }
+    #contents #main .news_lists li span {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-right: 10px; } }
 
+@media (min-width: 550px) {
+  #contents #main {
+    padding-right: 20px; } }
 #contents #sidemenu {
   padding-bottom: 20px; }
   #contents #sidemenu .pc_sidemenu h3 {
@@ -276,6 +277,8 @@ header {
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       #contents #sidemenu .pc_sidemenu li {
         background-image: url("../images/news/side_arrow@2x.png"); } }
+    #contents #sidemenu .pc_sidemenu li a {
+      text-decoration: none; }
 
 .fb_widget {
   display: inline-block;
